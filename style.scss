@@ -274,16 +274,22 @@ li {
     }
     .progress_active {
         &.skills__css  {
-            width: 80%;
+            width: 85%;
         }
         &.skills__html {
-            width: 90%;
+            width: 95%;
         }
-        &.skills__js, &.skills__git {
+        &.skills__js {
+            width: 80%;
+        }
+        &.skills__react {
+            width: 60%;
+        }
+        &.skills__git {
             width: 50%;
         }
-        &.skills__figma, &.skills__sass {
-            width: 70%;
+        &.skills__sass {
+            width: 80%;
         }
     }
     &__title {
@@ -364,7 +370,7 @@ li {
         }
     }    
 }
-.english {
+.languages {
     &__container {
         @include flex();
         justify-content: space-around;
@@ -486,21 +492,9 @@ li {
 .footer {
     height: 90px;
     @include flex();
-    justify-content: space-around;
-    flex-wrap: wrap;
-    &__icon {
-        transition: all 0.2s linear;
-        &:hover {
-            transform: scale(110%);
-        }
-    }
+    justify-content: center;
     &__text {
-        padding: 0 10px;
         text-align: center;
-        @media (max-width: 429px) {
-            order: 3;
-            
-        }
     }
 }
 .scroll-top {

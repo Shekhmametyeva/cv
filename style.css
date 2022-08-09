@@ -324,16 +324,22 @@ li {
   transition: all 0.5s linear;
 }
 .skills .progress_active.skills__css {
-  width: 80%;
+  width: 85%;
 }
 .skills .progress_active.skills__html {
-  width: 90%;
+  width: 95%;
 }
-.skills .progress_active.skills__js, .skills .progress_active.skills__git {
+.skills .progress_active.skills__js {
+  width: 80%;
+}
+.skills .progress_active.skills__react {
+  width: 60%;
+}
+.skills .progress_active.skills__git {
   width: 50%;
 }
-.skills .progress_active.skills__figma, .skills .progress_active.skills__sass {
-  width: 70%;
+.skills .progress_active.skills__sass {
+  width: 80%;
 }
 .skills__title {
   font-size: 1.5rem;
@@ -418,7 +424,7 @@ li {
   }
 }
 
-.english__container {
+.languages__container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -426,11 +432,11 @@ li {
   flex-wrap: wrap;
   gap: 30px;
 }
-.english__text {
+.languages__text {
   font-size: 1.8rem;
   font-weight: 400;
 }
-.english__text span {
+.languages__text span {
   color: #3c3cd1;
   font-size: 2rem;
 }
@@ -557,23 +563,10 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.footer__icon {
-  transition: all 0.2s linear;
-}
-.footer__icon:hover {
-  transform: scale(110%);
+  justify-content: center;
 }
 .footer__text {
-  padding: 0 10px;
   text-align: center;
-}
-@media (max-width: 429px) {
-  .footer__text {
-    order: 3;
-  }
 }
 
 .scroll-top {
